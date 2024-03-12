@@ -1,33 +1,39 @@
-# simply-to-do-list
->>>>>>> 70631b4b0dc714406880c2cb46f0a7a1b12f25ea
-# React + TypeScript + Vite
+# Simply To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get started with building a to-do list application using React, TypeScript, and Vite. It includes Hot Module Replacement (HMR) for efficient development and some ESLint rules for code quality.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To begin using this template, make sure you have Node.js and npm installed. Then, clone this repository and run the following commands:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
+This will start the development server and you can view your application in the browser.
+
+## Expanding the Configuration
+
+If you're developing a production application, consider expanding the ESLint configuration:
+
+- Configure the top-level `parserOptions` property in your ESLint configuration file (`eslint.config.js`) like this:
+
+```js
+parserOptions: {
+  ecmaVersion: 'latest',
+  sourceType: 'module',
+  project: ['./tsconfig.json', './tsconfig.node.json'],
+  tsconfigRootDir: __dirname,
+},
+```
+
+- Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
+- Optionally, you can add `plugin:@typescript-eslint/stylistic-type-checked`.
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list.
+
+## Try It Out
+
+Feel free to try out the to-do list application [here](https://simply-to-do-list-app.web.app/). 
+
+Happy coding! 🚀
